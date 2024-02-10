@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralax</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="container">
+          <a href="#!" class="header__logo">Logo</a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#!" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img src="./img/fantasy.png" alt="fantasy" class="header__fantasy" />
+      <img
+        src="./img/cloud1.png"
+        alt="cloud_first"
+        class="header__cloud-first cloud"
+        data-speed="0.35"
+      />
+      <img
+        src="./img/cloud2.png"
+        alt="cloud_second"
+        class="header__cloud-second cloud"
+        data-speed="-0.45"
+      />
+      <img
+        src="./img/cloud3.png"
+        alt="cloud_third"
+        class="header__cloud-third cloud"
+        data-speed="0.5"
+      />
+      <img src="./img/boat.png" alt="boat" class="header__boat" />
+      <div class="header__content">
+        <h1 class="header__title">Parallax Effect</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about">
+        <div class="container">
+          <div class="scroll__cards">
+            <div class="scroll__card fade-right" data-speed="400"></div>
+            <div class="scroll__card fade-right" data-speed="800"></div>
+            <div class="scroll__card fade-right" data-speed="1200"></div>
+            <div class="scroll__card fade-right" data-speed="1600"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="parallax">
+        <h2 class="parallax__title">Parallax</h2>
+        <div class="parallax__box">
+          <img
+            src="./img/parallax/Parallax_3.png"
+            alt=""
+            class="parallax__banner"
+          />
+          <img
+            src="./img/parallax/Parallax_4.png"
+            alt=""
+            class="parallax__ball layer1"
+            data-speed="-5"
+          />
+          <img
+            src="./img/parallax/Parallax_5.png"
+            alt=""
+            class="parallax__ball layer2"
+            data-speed="2"
+          />
+        </div>
+      </section>
+
+      <section class="timer">
+        <div class="container">
+          <div class="timer__item">
+            <p class="timer__num" data-num="243">0</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#!" class="timer__btn">
+              Button
+              <span></span>
+            </a>
+          </div>
+          <div class="timer__item">
+            <p class="timer__num" data-num="355">0</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#!" class="timer__btn">
+              Button
+              <span></span>
+            </a>
+          </div>
+          <div class="timer__item">
+            <p class="timer__num" data-num="410">0</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#!" class="timer__btn">
+              Button
+              <span></span>
+            </a>
+          </div>
+          <div class="timer__item">
+            <p class="timer__num" data-num="277">0</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#!" class="timer__btn">
+              Button
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="container">
+          <div class="card">
+            <div class="card__item"></div>
+          </div>
+          <div class="card">
+            <div class="card__item"></div>
+          </div>
+          <div class="card">
+            <div class="card__item"></div>
+          </div>
+          <div class="card">
+            <div class="card__item"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scroll">
+        <div class="container">
+          <div class="scroll__cards">
+            <div class="scroll__card fade-right" data-speed="400"></div>
+            <div class="scroll__card fade-right" data-speed="800"></div>
+            <div class="scroll__card fade-right" data-speed="1200"></div>
+            <div class="scroll__card fade-right" data-speed="1600"></div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </main>
+
+    <script src="./script/typing.js"></script>
+    <script src="./script/main.js"></script>
+  </body>
+</html>

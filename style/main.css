@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.header {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header img {
+    position: absolute;
+}
+
+.header__fantasy {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.header__nav {
+    padding: 20px 0;
+}
+
+.header__nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.header__logo {
+    font-size: 45px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.header__link {
+    font-size: 25px;
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+.cloud {
+    mix-blend-mode: overlay;
+}
+
+.header__cloud-first {
+    top: 15%;
+    left: 5%;
+}
+
+.header__cloud-second {
+    top: 15%;
+    left: 65%;
+}
+
+.header__cloud-third {
+    top: 15%;
+    left: 42%;
+}
+
+.header__boat {
+    top: 80%;
+    left: 40%;
+}
+
+.header__content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #FFF;
+    text-shadow: 5px 5px 10px #000;
+}
+
+/* Header End */
+
+/* Main  Start*/
+
+/* About/Scroll Section Start */
+
+.about,
+.scroll {
+    padding: 50px 0;
+}
+
+.scroll__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.scroll__card {
+    width: 255px;
+    height: 255px;
+    background: #333;
+    border-radius: 15px;
+}
+
+.fade-right {
+    transform: translate3d(-200px, 0, 0);
+    /* X Y Z */
+    opacity: 0;
+}
+
+.active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+/* About/Scroll Section End */
+
+/* Parallax Section Start */
+
+.parallax {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.parallax__title {
+    font-size: 60px;
+    text-align: center;
+    color: #333;
+}
+
+.parallax__box {
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.parallax__box img {
+    position: absolute;
+}
+
+.parallax__banner {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.layer1 {
+    top: 15%;
+    left: 15%;
+}
+
+.layer2 {
+    top: 15%;
+    left: 80%;
+}
+
+/* Parallax Section End */
+
+/* Timer Section Start */
+
+.timer {
+    padding: 50px 0;
+}
+
+.timer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.timer__item {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    color: #fff;
+    box-shadow: 0 0 5px #333;
+    background: #333;
+    row-gap: 20px;
+    border-radius: 15px;
+}
+
+.timer__num {
+    font-size: 30px;
+}
+
+.timer__btn {
+    display: block;
+    position: relative;
+    color: #333;
+    background: #fff;
+    overflow: hidden;
+    max-width: 155px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.timer__btn:hover {
+    color: #fff;
+}
+
+.timer__btn span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: block;
+    border-radius: 50%;
+    background: dodgerblue;
+    transition: .3s linear;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.timer__btn:hover span {
+    width: 300px;
+    height: 300px;
+}
+
+/* Timer Section End */
+
+/* Cards Section Start */
+
+.cards {
+    padding: 50px 0;
+}
+
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card__item {
+    width: 250px;
+    height: 250px;
+    background: darkviolet;
+    border-radius: 15px;
+    transition: .2s;
+}
+
+/* Cards Section End */
